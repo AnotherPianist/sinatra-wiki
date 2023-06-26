@@ -11,3 +11,7 @@ end
 get '/' do
   erb :welcome
 end
+
+get '/:title' do
+  page_content params[:title]
+end
